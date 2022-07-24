@@ -1,44 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="q1.css" />
+    <title>Quiz App</title>
+  </head>
+  <body>
+    <div class="quiz-container" id="quiz">
+      <div class="quiz-header">
+        <h2 id="question">Question text</h2>
+        <ul>
+          <li>
+            <input type="radio" name="answer" id="a" class="answer">
+            <label for="a" id="a_text">Question</label>
+          </li>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="quiz.css" />
-</head>
+          <li>
+            <input type="radio" name="answer" id="b" class="answer">
+            <label for="b" id="b_text">Question</label>
+          </li>
 
-<body>
-    <section class="main">
+          <li>
+            <input type="radio" name="answer" id="c" class="answer">
+            <label for="c" id="c_text">Question</label>
+          </li>
 
-        <div class="container">
-            <div class="col">
-                <h3 id="questionBox">
-                    1) Lorem ipsum dolor sit amet, consectetur adipisicing elit Debitis?
-                </h3>
-            </div>
-            <div class="col box">
-                <input name="option" type="radio" id="first" value="a" required>
-                <label for="first">Testing 1</label>
-            </div>
-            <div class="col box">
-                <input name="option" type="radio" id="second" value="b" required>
-                <label for="second">Testing 2</label>
-            </div>
-            <div class="col box">
-                <input name="option" type="radio" id="third" value="c" required>
-                <label for="third">Testing 3</label>
-            </div>
-            <div class="col box">
-                <input name="option" type="radio" id="fourth" value="d" required>
-                <label for="fourth">Testing 4</label>
-            </div>
-            <button id="submit">Submit</button>
-        </div>
-
-    </section>
-    <script src="quiz.js"></script>
-</body>
-
+          <li>
+            <input type="radio" name="answer" id="d" class="answer">
+            <label for="d" id="d_text">Question</label>
+          </li>
+        </ul>
+      </div>
+      <button id="submit">Submit</button>
+    </div>
+    <script src="q1.js"></script>
+  </body>
 </html>
